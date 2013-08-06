@@ -1,0 +1,1598 @@
+ Sign up for a GitHub Account Sign in
+PUBLIC
+ clioweb / praxis-network.css
+Created 2013-07-31
+
+praxis-network.org deminified CSS.
+Gist Detail
+Revisions 1
+Download Gist
+Clone this gist
+
+Embed this gist
+
+Link to this gist
+
+praxis-network.cssCSS
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+288
+289
+290
+291
+292
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303
+304
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330
+331
+332
+333
+334
+335
+336
+337
+338
+339
+340
+341
+342
+343
+344
+345
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359
+360
+361
+362
+363
+364
+365
+366
+367
+368
+369
+370
+371
+372
+373
+374
+375
+376
+377
+378
+379
+380
+381
+382
+383
+384
+385
+386
+387
+388
+389
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399
+400
+401
+402
+403
+404
+405
+406
+407
+408
+409
+410
+411
+412
+413
+414
+415
+416
+417
+418
+419
+420
+421
+422
+423
+424
+425
+426
+427
+428
+429
+430
+431
+432
+433
+434
+435
+436
+437
+438
+439
+440
+441
+442
+443
+444
+445
+446
+447
+448
+449
+450
+451
+452
+453
+454
+455
+456
+457
+458
+459
+460
+461
+462
+463
+464
+465
+466
+467
+468
+469
+470
+471
+472
+473
+474
+475
+476
+477
+478
+479
+480
+481
+482
+483
+484
+485
+486
+487
+488
+489
+490
+491
+492
+493
+494
+495
+496
+497
+498
+499
+500
+501
+502
+503
+504
+505
+506
+507
+508
+509
+510
+511
+512
+513
+514
+515
+516
+517
+518
+519
+520
+521
+522
+523
+524
+525
+526
+527
+528
+529
+530
+531
+532
+533
+534
+535
+536
+537
+538
+539
+540
+541
+542
+543
+544
+545
+546
+547
+548
+549
+550
+551
+552
+553
+554
+555
+556
+557
+558
+559
+560
+561
+562
+563
+564
+565
+566
+567
+568
+569
+570
+571
+572
+573
+574
+575
+576
+577
+578
+579
+580
+581
+582
+583
+584
+585
+586
+587
+588
+589
+590
+591
+592
+593
+594
+595
+596
+597
+598
+599
+600
+601
+602
+603
+604
+605
+606
+607
+608
+609
+610
+611
+612
+613
+614
+615
+616
+617
+618
+619
+620
+621
+622
+623
+624
+625
+626
+627
+628
+629
+630
+631
+632
+633
+634
+635
+636
+637
+638
+639
+640
+641
+642
+643
+644
+645
+646
+647
+648
+649
+650
+651
+652
+653
+654
+655
+656
+657
+658
+659
+660
+661
+662
+663
+664
+665
+666
+667
+668
+669
+670
+671
+672
+673
+674
+675
+676
+677
+678
+679
+680
+681
+682
+683
+684
+685
+686
+687
+688
+689
+690
+691
+692
+693
+694
+695
+696
+697
+698
+699
+700
+701
+702
+703
+704
+705
+706
+707
+708
+709
+710
+711
+712
+713
+714
+715
+716
+717
+718
+719
+720
+721
+722
+723
+724
+725
+726
+727
+728
+729
+730
+731
+732
+733
+734
+735
+736
+737
+738
+739
+740
+741
+742
+743
+744
+745
+746
+747
+748
+749
+750
+751
+752
+753
+754
+755
+756
+757
+758
+759
+760
+761
+762
+763
+764
+765
+766
+767
+768
+769
+770
+771
+772
+773
+774
+775
+776
+777
+778
+779
+780
+781
+782
+783
+784
+785
+786
+787
+788
+789
+790
+791
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html { line-height: 1 }
+ol,
+ul { list-style: none }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q,
+blockquote { quotes: none }
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+a img { border: none }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary { display: block }
+@media only screen { 
+    * {
+      -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	* html { font-size: 100% }
+	html {
+	    font-size: 16px;
+	    line-height: 1.75em;
+	}
+	.pie-element,
+	body.program div[role="main"] article>header,
+	body.program div[role="main"] article section,
+	div[role="main"] section.category h1,
+	div[role="main"] section.category p {
+	    behavior: url("/PIE.htc");
+	    position: relative;
+	}
+	html {
+	    background: #fff;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	body {
+	    font-family: Sanchez,Georgia,serif;
+	    *zoom: 1;
+	    width: auto;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-left: 0;
+	    padding-right: 0;
+	    background-color: #fff;
+	    color: #555;
+	}
+	body:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+	p,
+	ul,
+	ol,
+	dl {
+	    margin-top: 1.75em;
+	    padding-top: 0em;
+	    padding-bottom: 0em;
+	    margin-bottom: 0em;
+	}
+	ul { list-style: square }
+	ol { list-style: decimal }
+	ul,
+	ol { margin-left: 1.75em }
+	nav ul,
+	nav ol { margin: 0 }
+	em,
+	i { font-style: italic }
+	strong,
+	b { font-weight: bold }
+	form fieldset {
+	    margin: 0;
+	    padding: 0;
+	    border: none;
+	}
+	form textarea { width: 100% }
+	form textarea,
+	form input,
+	form select {
+	    font-family: Sanchez,Georgia,serif;
+	    color: #3c3c3c;
+	    font-size: 0.75em;
+	    line-height: 2.33333em;
+	    line-height: 1.75em;
+	}
+	nav ul,
+	nav ol {
+	    list-style: none;
+	    margin-left: 0;
+	    padding-left: 0;
+	}
+	a {
+	    text-decoration: none;
+	    -webkit-transition: background 0.3s linear,color 0.3s linear;
+	    -moz-transition: background 0.3s linear,color 0.3s linear;
+	    -o-transition: background 0.3s linear,color 0.3s linear;
+	    transition: background 0.3s linear,color 0.3s linear;
+	}
+	a:link { color: #0ad }
+	a:visited { color: #0083aa }
+	a:hover {
+	    border-bottom: 1px dotted #0083aa;
+	    color: #0083aa;
+	}
+	a:active {
+	    border-bottom: 1px solid #0083aa;
+	    color: #0083aa;
+	}
+	h1 {
+	    font-size: 2.5em;
+	    line-height: 1.4em;
+	    line-height: 1.53125em;
+	    font-weight: normal;
+	}
+	h2 {
+	    font-size: 1.5em;
+	    line-height: 1.16667em;
+	    line-height: 1.75em;
+	    margin-top: 1.75em;
+	    color: #f60;
+	}
+	h2+* { margin-top: 0 }
+	h3 {
+	    font-weight: bold;
+	    color: rgba(60,60,60,0.75);
+	    font-size: 1.25em;
+	    line-height: 1.4em;
+	}
+	h4 { font-weight: bold }
+	h5 { font-style: italic }
+	h6 {
+	    font-style: italic;
+	    color: rgba(60,60,60,0.5);
+	}
+	h1 a,
+	h2 a,
+	h3 a,
+	h4 a,
+	h5 a,
+	h6 a { text-decoration: none }
+	figure {
+	    margin-top: 1.75em;
+	    padding-top: 0em;
+	    padding-bottom: 0em;
+	    margin-bottom: 0em;
+	}
+	figcaption {
+	    font-size: 0.75em;
+	    line-height: 2.33333em;
+	    line-height: 1.75em;
+	    color: rgba(60,60,60,0.5);
+	}
+	figcaption>* { margin-top: 0 }
+	table {
+	    width: 100%;
+	    font-size: 0.875em;
+	    line-height: 2em;
+	    margin-top: 3.5em;
+	    padding-top: 0em;
+	    padding-bottom: 0em;
+	    margin-bottom: 0em;
+	    border: 5px solid rgba(0,0,0,0.25);
+	    border-width: 5px 0;
+	}
+	table th,
+	table td {
+	    padding: 0.4375em;
+	    vertical-align: top;
+	}
+	table thead { border-bottom: 2px solid rgba(0,0,0,0.1) }
+	table tr+tr { border-top: 1px dotted rgba(0,0,0,0.1) }
+	table tbody th {
+	    width: 20%;
+	    font-weight: bold;
+	}
+	img {
+	    max-width: 100%;
+	    width: auto;
+	    height: auto;
+	}
+	.intro {
+	    font-size: 1.125em;
+	    line-height: 1.55556em;
+	    line-height: 1.75em;
+	    margin: 0;
+	    padding: 4.34783% 0;
+	    border: 1px dotted rgba(60,60,60,0.25);
+	    border-width: 1px 0;
+	    color: #f60;
+	}
+	.program-category-intro {
+	    font-size: 0.875em;
+	    line-height: 2em;
+	    font-style: italic;
+	    color: rgba(60,60,60,0.5);
+	}
+	header[role="banner"] {
+	    overflow: hidden;
+	    *zoom: 1;
+	    padding: 4.34783% 4.34783% 1.75em;
+	    background-color: #fff;
+	    border-top: 10px solid rgba(0,0,0,0.1);
+	}
+	header[role="banner"] h1 {
+	    font-size: 1.25em;
+	    line-height: 1.4em;
+	}
+	.home header[role="banner"] h1 {
+	    font-size: 1.875em;
+	    line-height: 1.86667em;
+	    line-height: 1.75em;
+	    margin: 0;
+	    margin-bottom: 0.875em;
+	    display: block;
+	}
+	header[role="banner"] nav {
+	    margin-top: 1.75em;
+	    font-size: 0.875em;
+	    line-height: 2em;
+	}
+	header[role="banner"] nav a {
+	    background: #0083aa;
+	    display: block;
+	    float: left;
+	    margin: 0 5px 5px 0;
+	    color: #fff;
+	    padding: 4px 8px;
+	}
+	header[role="banner"] nav a:link,
+	header[role="banner"] nav a:visited {
+	    background-color: #0083aa;
+	    color: #fff;
+	}
+	header[role="banner"] nav a:hover,
+	header[role="banner"] nav a:focus,
+	header[role="banner"] nav a:active {
+	    background-color: #0ad;
+	    color: #fff;
+	}
+	.home header[role="banner"] nav {
+	    font-size: 1em;
+	    line-height: 1.75em;
+	}
+	header[role="banner"] a { border: none !important }
+	div[role="main"] {
+	    width: 100%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	}
+	div[role="main"] article {
+	    padding-left: 4.34783%;
+	    padding-right: 4.34783%;
+	}
+	body.program div[role="main"] article {
+	    width: 100%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    margin-left: 0%;
+	    padding-left: 0%;
+	    padding-right: 0%;
+	}
+	body.program div[role="main"] article>header {
+	    width: 100%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    padding: 4.34783%;
+	    color: #fff;
+	    display: block;
+	    background: rgba(0,0,0,0.5);
+	    -pie-background: rgba(0,0,0,0.5);
+	}
+	body.program div[role="main"] article>header a {
+	    color: #ddd;
+	    text-decoration: underline;
+	    border: none;
+	}
+	body.program div[role="main"] article section {
+	    z-index: 1000;
+	    width: 100%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    margin-left: 0%;
+	    padding: 4.34783%;
+	    margin: 0 0 21em;
+	    background-color: #fff;
+	    background-color: rgba(255,255,255,0.95);
+	    -pie-background: rgba(255,255,255,0.95);
+	    -webkit-box-shadow: rgba(0,0,0,0.5) 0 0 20px;
+	    -moz-box-shadow: rgba(0,0,0,0.5) 0 0 20px;
+	    box-shadow: rgba(0,0,0,0.5) 0 0 20px;
+	}
+	body.program div[role="main"] article section h2 { margin-top: 0 }
+	div[role="main"] #category-nav {
+	    width: 100%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    background-color: #0083aa;
+	    margin-top: 1.75em;
+	    line-height: 2.625em;
+	    padding-left: 4.34783%;
+	    padding-right: 4.34783%;
+	    padding-top: 0.5em;
+	}
+	div[role="main"] #category-nav a {
+	    background-color: rgba(0,0,0,0.1);
+	    color: #fff;
+	    color: rgba(255,255,255,0.8);
+	    border: none;
+	    padding: 0 1.3125em;
+	    display: block;
+	    float: left;
+	    margin-right: 0.25em;
+	    margin-bottom: 0.5em;
+	}
+	div[role="main"] #category-nav a:link,
+	div[role="main"] #category-nav a:visited { background-color: rgba(0,0,0,0.1) }
+	div[role="main"] #category-nav a:hover,
+	div[role="main"] #category-nav a:focus,
+	div[role="main"] #category-nav a:active {
+	    color: #fff;
+	    background-color: rgba(0,0,0,0.2);
+	}
+	div[role="main"] #program-nav {
+	    border: 1px dotted rgba(60,60,60,0.25);
+	    border-width: 1px 0;
+	    padding: 1.75em 0;
+	    margin: 1.75em 0;
+	}
+	div[role="main"] #program-nav a { border: none }
+	div[role="main"] #program-nav a+a:before {
+	    content: "· ";
+	    color: rgba(0,0,0,0.5);
+	}
+	div[role="main"] section#introduction {
+	    width: 100%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    margin-left: 0%;
+	    padding: 1.75em 4.34783%;
+	}
+	div[role="main"] section.category {
+	    width: 100%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    margin-left: 0%;
+	    overflow: hidden;
+	    *zoom: 1;
+	}
+	div[role="main"] section.category h1,
+	div[role="main"] section.category p {
+	    padding: 4.34783% 4.34783% 0;
+	    color: #fff;
+	    color: rgba(255,255,255,0.8);
+	    margin: 0;
+	    background: rgba(0,0,0,0.5);
+	    -pie-background: rgba(0,0,0,0.5);
+	}
+	div[role="main"] section.category p { padding-bottom: 4.34783% }
+	div[role="main"] section.category table {
+	    display: block;
+	    margin: 0;
+	    border-width: 0;
+	}
+	div[role="main"] section.category .table {
+	    padding: 4.34783% 4.34783%;
+	    background-color: #fff;
+	    background-color: rgba(255,255,255,0.9);
+	    border: 1px solid rgba(0,0,0,0.2);
+	    border-width: 10px 0;
+	}
+	div[role="main"] section.category#letter {
+	    background: url("images/letter.jpg") 0 0 no-repeat fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	div[role="main"] section.category#support {
+	    background: url("../images/support.jpg") 0 0 no-repeat fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	div[role="main"] section.category#people {
+	    background: url("../images/people.jpg") 0 0 no-repeat fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	div[role="main"] section.category#structure {
+	    background: url("../images/structure.jpg") 0 0 no-repeat fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	div[role="main"] section.category#research {
+	    background: url("../images/research.jpg") 0 0 no-repeat fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	div[role="main"] section.category#directions {
+	    background: url("../images/directions.jpg") 0 0 no-repeat fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	div[role="main"] section.category#nuts-and-bolts {
+	    background: url("../images/nuts-and-bolts.jpg") 0 0 no-repeat fixed;
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	}
+	body.uva-praxis-program {
+	    background-image: url("../images/uva-praxis-program.jpg");
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-attachment: fixed;
+	}
+	body.chi-initiative {
+	    background-image: url("../images/chi-initiative.jpg");
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-attachment: fixed;
+	}
+	body.hope-mellon-scholars {
+	    background-image: url("../images/hope-mellon-scholars.jpg");
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-attachment: fixed;
+	}
+	body.cuny-gcdi {
+	    background-image: url("../images/cuny-gcdi.jpg");
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-attachment: fixed;
+	}
+	body.ucldh {
+	    background-image: url("../images/ucldh.jpg");
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-attachment: fixed;
+	}
+	body.duke-phd-lab {
+	    background-image: url("../images/duke-phd-lab.jpg");
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-attachment: fixed;
+	}
+	body.brock-iasc {
+	    background-image: url("../images/brock-iasc.jpg");
+	    -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	    background-size: cover;
+	    background-attachment: fixed;
+	}
+	#image-credits figure {
+	    width: 47.82609%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    height: 250px;
+	}
+	#image-credits figure:nth-child(2n) {
+	    width: 47.82609%;
+	    float: right;
+	    margin-right: 0;
+	    #margin-left: -50px;
+	    display: inline;
+	}
+	#image-credits figure img {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: 0.875em;
+	}
+	footer[role="contentinfo"] {
+	    clear: both;
+	    padding: 4.34783% 4.34783% 7em;
+	    background-color: #fff;
+	    border-bottom: 10px solid rgba(0,0,0,0.1);
+	}
+	footer[role="contentinfo"] h2 { margin-top: 0 }
+	#back-to-top {
+	    font-size: 0.875em;
+	    line-height: 2em;
+	    position: fixed;
+	    bottom: 0;
+	    right: 20px;
+	    z-index: 10000;
+	    display: none;
+	    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	    border: 2px solid white;
+	    background-color: #fafafa;
+	    padding: 6px 10px;
+	    cursor: pointer;
+	    color: #007a99;
+	}
+	#back-to-top:hover { color: #333 }
+}
+@media only screen and (min-width: 700px) { 
+	header[role="banner"] { padding: 3.0625em 13.04348% 1.75em }
+	.home header[role="banner"] h1 {
+	    font-size: 3.75em;
+	    line-height: 1.4em;
+	}
+	.intro {
+	    font-size: 1.5em;
+	    line-height: 1.16667em;
+	    line-height: 2.1875em;
+	}
+	div[role="main"] article {
+	    padding-left: 13.04348%;
+	    padding-right: 13.04348%;
+	}
+	body.program div[role="main"] article>header {
+	    padding-left: 13.04348%;
+	    padding-right: 13.04348%;
+	}
+	body.program div[role="main"] article section {
+	    padding-left: 13.04348%;
+	    padding-right: 13.04348%;
+	    padding-top: 4.34783%;
+	    padding-bottom: 4.34783%;
+	}
+	div[role="main"] section#introduction { padding: 1.75em 13.04348% }
+	div[role="main"] section.category h1,
+	div[role="main"] section.category p {
+	    padding-left: 13.04348%;
+	    padding-right: 13.04348%;
+	}
+	div[role="main"] section.category .table { padding: 4.34783% 13.04348% }
+	div[role="main"] #category-nav {
+	    padding-left: 13.04348%;
+	    padding-right: 13.04348%;
+	}
+	#image-credits figure {
+	    width: 21.73913%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    height: 250px;
+	}
+	#image-credits figure:nth-child(2n) {
+	    float: left;
+	    margin-right: 4.34783%;
+	    #margin-left: auto;
+	    width: 21.73913%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	}
+	#image-credits figure:nth-child(4n) {
+	    width: 21.73913%;
+	    float: right;
+	    margin-right: 0;
+	    #margin-left: -50px;
+	    display: inline;
+	}
+	footer[role="contentinfo"] { padding: 3.5em 13.04348% 7em }
+}
+@media only screen and (min-width: 860px) { 
+	.program section {
+	    overflow: hidden;
+	    *zoom: 1;
+	}
+	.program section header {
+	    width: 34.78261%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	}
+	.program section .content { margin-left: 39.13043% }
+	.program section figure {
+	    float: right;
+	    margin-left: 1.75em;
+	}
+	.program section figure>div {
+	    float: left;
+	    width: 48%;
+	}
+	.program section figure>div+div { float: right }
+	.program section figure.normal,
+	.program section figure.feature {
+	    float: none;
+	    margin-left: 0;
+	}
+	.program section figure figcaption { clear: both }
+	.program section figure.feature { margin-left: -65.21739% }
+	.program section figure.feature figcaption {
+	    width: 21.73913%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	    clear: none;
+	}
+	section h2 {
+	    font-size: 2.25em;
+	    line-height: 1.55556em;
+	    line-height: 2.625em;
+	    margin-top: 0;
+	}
+	section#introduction {
+	    overflow: hidden;
+	    *zoom: 1;
+	}
+	section#introduction .content {
+	    width: 60.86957%;
+	    float: left;
+	    margin-right: 4.34783%;
+	    display: inline;
+	}
+	section#introduction .content p { margin: 0 0 1.75em }
+	section#introduction .intro {
+	    width: 34.78261%;
+	    float: right;
+	    margin-right: 0;
+	    #margin-left: -50px;
+	    display: inline;
+	    line-height: 1.75em;
+	}
+}
+@media print { 
+	* {
+	    background: transparent !important;
+	    color: black !important;
+	    box-shadow: none !important;
+	    text-shadow: none !important;
+	    filter: none !important;
+	    -ms-filter: none !important;
+	}
+	a,
+	a:visited { text-decoration: underline }
+	a[href]:after { content: " (" attr(href) ")" }
+	abbr[title]:after { content: " (" attr(title) ")" }
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after { content: "" }
+	pre,
+	blockquote {
+	    border: 1px solid #999;
+	    page-break-inside: avoid;
+	}
+	thead { display: table-header-group }
+	tr,
+	img { page-break-inside: avoid }
+	img { max-width: 100% !important }
+}
